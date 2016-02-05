@@ -1,0 +1,33 @@
+https://www.hackerearth.com/indiahacks-code-mania-10/algorithm/burger-deliver-time-3/
+------------
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	long long int t,i,j,k,l,m,n;
+	cin>>n;
+	long int a[n],b[n];
+	for(i=0;i<n;i++)
+	{
+		cin>>j>>k;
+		a[i]=i+1;
+		b[i]=j+k;
+	}
+	
+	for(i=0;i<n;i++)
+	{
+		for(j=i+1;j<n;j++)
+		{
+			if(b[i]>b[j])
+			{
+				swap(b[i],b[j]);
+				swap(a[i],a[j]);
+			}
+		}
+	}
+	
+	for(i=0;i<n;i++)
+	cout<<a[i]<<" ";
+	
+}
