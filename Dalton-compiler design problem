@@ -1,0 +1,19 @@
+https://www.hackerearth.com/problem/algorithm/dalton-and-compiler-design/
+--------
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+	long long int t,n,i,j;
+	cin>>t;
+	while(t--)
+	{
+		cin>>n;
+		i=n/2;
+		if(n%2==0)
+		cout<<i<<" "<<i<<"\n";
+		else
+		cout<<i<<" "<<i+1<<"\n";
+	}
+}
